@@ -1,3 +1,15 @@
+v2.2.3
+- Add af-south-1 S3 region
+- Add support for telemetry events
+
+v2.2.2
+- Add sa-east-1 region to cognito-idp service
+- Support for af-south-1
+- Increase minimum hackney version to 1.16 to hopefully reduce instances of people hitting bugs
+in older versions
+- Include profile in ETS key used for :awscli auth cache
+
+
 v2.2.1
 - Fix regression in 2.2.0 requiring metadata instance config parameter
 - Fix calculation of authentication cache time
