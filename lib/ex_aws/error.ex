@@ -1,3 +1,3 @@
 defmodule ExAws.Error do
-  defexception [:message]
+  defexception [:message, :info]
 end
