@@ -84,11 +84,14 @@ defmodule ExAws do
         result
 
       error ->
-        raise ExAws.Error, """
-        ExAws Request Error!
+        raise %ExAws.Error{
+          message: """
+          ExAws Request Error!
 
-        #{inspect(error)}
-        """
+          #{inspect(error)}
+          """,
+          info: error
+        }
     end
   end
 
